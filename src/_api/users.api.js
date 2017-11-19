@@ -1,6 +1,4 @@
 class UsersApi {
-  
-
   static getAllUsers() {
     const baseUrl = "https://59f999a5f5e01400123e9955.mockapi.io/api/v1/users/";
     return fetch(baseUrl).then(response => {

@@ -9,7 +9,6 @@ class HomePage extends React.Component {
                      <button className="btn btn-primary">Add New</button>
             </div>
             <div className="col-md-6 col-md-offset-3">
-                // <input type="text" className="form-control" name="searchUser" value={txtUserData} onChange={this.handleChange} />
             </div>
       </div>
     );

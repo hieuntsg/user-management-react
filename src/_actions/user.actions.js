@@ -31,7 +31,6 @@ export function loadUsers() {
 export function updateUser(user) {
   return function (dispatch) {
     return usersApi.updateUser(user).then(responseUser => {
-      console.log(responseUser);
       dispatch(updateUserSuccess(responseUser));
     }).catch(error => {
       throw(error);
@@ -53,11 +52,10 @@ export function createUser(user) {
 export function deleteUser(user) {
   return function(dispatch) {
     return usersApi.deleteUser(user).then(() => {
-      console.log(`Deleted ${user.id}`)
       dispatch(deleteUserSuccess(user));
       return;
     }).catch(error => {
       throw(error);
-    })
-  }
+    });
+  };
 }
